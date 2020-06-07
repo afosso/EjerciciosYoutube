@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--ESTILOS CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--ESTILOS CSS ICONOS FONTAWESOME-->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!--ESTILOS Sweet Alert-->
+    <link rel="stylesheet" href="../assets/plugins/SweetAlert/dist/sweetalert2.min.css">
+
+</head>
+
+<body>
+    <div class="container col-md-6">
+        <div class="card ">
+            <div class="card-header">
+                Iniciar sesión
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="correo">Correo: </label>
+                        <input type="email" name="correo" id="correo" class="form-control"
+                            placeholder="Digite su usuario">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="contrasenia">Contraseña: </label>
+                        <input type="password" name="contrasenia" id="contrasenia" class="form-control"
+                            placeholder="Digite su contraseña">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="button" onclick="IniciarSesion();" value="Iniciar sesión" class="btn btn-success">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../assets/js/all.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../js/login.js"></script>
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/plugins/SweetAlert/dist/sweetalert2.all.min.js"></script>
+
+</html>

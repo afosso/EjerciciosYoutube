@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD PHP</title>
+
+    <!--ESTILOS CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--ESTILOS CSS ICONOS FONTAWESOME-->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <!--ESTILOS Sweet Alert-->
+    <link rel="stylesheet" href="../assets/plugins/SweetAlert/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header bg-info">
+                <h3 class="text-white">Gestionar Personas</h3>
+            </div>
+            <div class="card-body">
+                <input type="hidden" name="idPersona" id="idPersona">
+
+                <div class="row">
+                    <div class="btn-group-sm">
+                        <button class="btn btn-outline-info" onclick="Consultar();"><span class="fa fa-search"></span> Consultar</button>
+                        <button class="btn btn-outline-info" id="guardar" onclick="Guardar();"><span class="fa fa-save"></span> Guardar</button>
+                        <button class="btn btn-outline-info" id="modificar" onclick="Modificar();" disabled="true"><span class="fa fa-pencil-alt"></span> Modificar</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nombres">Nombres:</label>
+                        <input type="text" name="nombres" id="nombres" placeholder="Por favor digite sus nombres" class="form-control" autofocus>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="Por favor digite sus apellidos" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="fechanacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" name="fechanacimiento" id="fechanacimiento" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Por favor digite su dirección" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" name="telefono" id="telefono" placeholder="Por favor digite el teléfono" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <table class="table table-striped" id="tablaPersona">
+                    <thead>
+                        <tr>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Dirección</th>
+                            <th>Teléfono</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datos">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<!-- JAVASCRIPT -->
+<script src="../assets/js/all.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery.js"></script>
+<script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="../js/persona.js"></script>
+<script src="../assets/plugins/SweetAlert/dist/sweetalert2.all.min.js"></script>
+
+
+</html>
