@@ -1,0 +1,23 @@
+/*
+	1.	Se requiere un algoritmo que permita elaborar la planilla de 
+	pago de un empleado. Para ello usted deberá solicitar las horas 
+	laboradas en el mes y la tarifa por hora, adicionalmente se debe 
+	descontar el 10% del sueldo calculado.
+*/
+
+ENTERO horas_laboradas, tarifa_hora, sueldo
+
+INICIO
+
+	ESCRIBA "Ingrese la cantidad de horas laboradas: "
+	LEA horas_laboradas
+	
+	ESCRIBA "Ingrese la tarifa de la hora: "
+	LEA tarifa_hora
+	
+	sueldo <- horas_laboradas * tarifa_hora
+	sueldo <- sueldo - (sueldo * 0.1)
+	
+	ESCRIBA "El sueldo del empleado es de: ", sueldo
+
+FIN

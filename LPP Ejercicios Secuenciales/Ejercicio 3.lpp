@@ -1,0 +1,23 @@
+/*
+	1.	Leer dos reales y hallar lo siguiente: 
+		a.	El doble del número 1
+		b.	El cuadrado del número 2 
+		c.	La sumatoria del doble del número 1 y cuadrado del número 2 y posteriormente imprimirlo. 
+
+*/
+
+ENTERO numero1, numero2, resultado, doble, cuadrado
+
+INICIO
+
+	ESCRIBA "Por favor ingrese el numero 1 "
+	LEA numero1
+	ESCRIBA "Por favor ingrese el numero 2 "
+	LEA numero2
+	
+	doble <- numero1 * 2
+	cuadrado <- numero2 * numero2
+	resultado <- doble + cuadrado
+	ESCRIBA "La sumatoria de las operaciones es de: ", resultado
+
+FIN

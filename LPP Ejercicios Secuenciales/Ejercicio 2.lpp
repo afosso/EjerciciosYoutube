@@ -1,0 +1,21 @@
+/*
+	2.	Elaborar un algoritmo que permita hallar el promedio de un estudiante, a partir de sus 3 notas parciales.
+*/
+
+REAL nota1, nota2, nota3, suma, promedio
+
+INICIO
+
+	ESCRIBA "Digite la nota 1 "
+	LEA nota1
+	ESCRIBA "Digite la nota 2 "
+	LEA nota2
+	ESCRIBA "Digite la nota 3 "
+	LEA nota3
+	
+	suma<- nota1 + nota2 + nota3
+	promedio<- suma / 3
+	
+	ESCRIBA "El promedio del estudiante es de: ", promedio
+
+FIN

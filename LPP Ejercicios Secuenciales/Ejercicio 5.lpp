@@ -1,0 +1,22 @@
+/*
+	 Leer 3 reales y hallar el promedio de los tres números, posteriormente imprimir su valor elevado al cubo. 
+*/
+
+REAL numero1, numero2, numero3, promedio, cubo
+
+INICIO
+
+
+	ESCRIBA "Digite el numero 1 "
+	LEA numero1
+	ESCRIBA "Digite el numero 2 "
+	LEA numero2
+	ESCRIBA "Digite el numero 3 "
+	LEA numero3
+	
+	promedio <- (numero1 + numero2 + numero3) / 3
+	cubo <- promedio ^ 3
+	
+	ESCRIBA "El valor elevado al cubo es de: ", cubo
+
+FIN

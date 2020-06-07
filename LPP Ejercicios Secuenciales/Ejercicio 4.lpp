@@ -1,0 +1,16 @@
+/*
+	Hallar el volumen de un cubo y posteriormente imprimir su valor. 
+*/
+
+ENTERO arista, resultado
+
+INICIO
+
+	ESCRIBA "Por favor digite la arista del cubo: "
+	LEA arista
+	
+	resultado <- arista * arista * arista
+	
+	ESCRIBA "El area del cubo es: ", resultado
+
+FIN

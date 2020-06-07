@@ -1,0 +1,17 @@
+/*
+	Convertir de grados Fahrenheit a grados Celsius.
+	C = (F-32)/1.8
+*/
+
+REAL cel, far
+
+INICIO
+
+	ESCRIBA "Digite la cantidad de grados Fahrenheit a convertir "
+	LEA far
+	
+	cel <- (far - 32) / 1.8
+	
+	ESCRIBA "La cantidad de grados celsius es de: ", cel
+
+FIN

@@ -1,0 +1,14 @@
+/*
+	Hallar el área de un cuadrado e imprimir su valor.
+*/
+
+ENTERO lado, area
+
+INICIO
+
+	ESCRIBA "Digite el valor de un lado del cuadrado: "
+	LEA lado
+	area <- lado ^ 2
+	ESCRIBA "El area del cuadrado es de: ", area
+
+FIN

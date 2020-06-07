@@ -1,0 +1,24 @@
+/*
+	1.	Elaborar un algoritmo que solicite el número de 
+	respuestas correctas, incorrectas y en blanco, correspondientes 
+	a postulantes, y muestre el puntaje final considerando, que 
+	por cada respuesta correcta obtendrá 4 puntos, respuestas 
+	incorrectas tendrá -1 y respuestas en blanco tendrá cero.
+*/
+
+ENTERO correctas, incorrectas, blanco, puntaje
+
+INICIO
+	
+	ESCRIBA "Digite la cantidad de respuestas correctas "
+	LEA correctas
+	ESCRIBA "Digite la cantidad de respuestas incorrectas "
+	LEA incorrectas
+	ESCRIBA "Digite la cantidad de respuestas en blanco "
+	LEA blanco
+	
+	puntaje <- (correctas * 4) + (incorrectas * -1)
+	
+	ESCRIBA "El puntaje obtenido es de: ", puntaje
+	
+FIN

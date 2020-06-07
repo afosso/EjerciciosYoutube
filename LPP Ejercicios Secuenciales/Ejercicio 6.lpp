@@ -1,0 +1,18 @@
+/*
+	Hallar el área de un triángulo e imprimir su valor. 
+*/
+
+REAL base, altura, area
+
+INICIO
+
+	ESCRIBA "Digite la base "
+	LEA base
+	ESCRIBA "Digite la altura "
+	LEA altura
+	
+	area <- base * altura / 2
+	
+	ESCRIBA "El area del triangulo es de: ", area
+
+FIN

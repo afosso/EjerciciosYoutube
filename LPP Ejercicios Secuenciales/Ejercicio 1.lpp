@@ -1,0 +1,31 @@
+/*
+1.	Se necesita obtener la suma, resta, multiplicación y división, de dos números leídos por teclado.
+*/
+
+ENTERO numero1, numero2
+REAL resultado
+
+INICIO
+
+	ESCRIBA "Digite el numero 1 "
+	LEA numero1
+	ESCRIBA "Digite el numero 2 "
+	LEA numero2
+	
+	resultado <- numero1 + numero2
+	ESCRIBA "El resultado de la suma es de ", resultado
+	LLAMAR NUEVA_LINEA
+	
+	resultado <- numero1 - numero2
+	ESCRIBA "El resultado de la resta es de ", resultado
+	LLAMAR NUEVA_LINEA
+	
+	resultado <- numero1 * numero2
+	ESCRIBA "El resultado de la multiplicacion es de ", resultado
+	LLAMAR NUEVA_LINEA
+
+	resultado <- numero1 / numero2
+	ESCRIBA "El resultado de la division es de ", resultado
+	LLAMAR NUEVA_LINEA
+
+FIN
