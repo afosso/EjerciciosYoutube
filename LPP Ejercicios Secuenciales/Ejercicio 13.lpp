@@ -1,0 +1,38 @@
+/*
+	1.	Elaborar un algoritmo que lea la cantidad 
+	de alumnos de Redes, Contabilidad y Sistemas, 
+	y determine el porcentaje de alumnos en cada 
+	uno de los cursos.
+	
+	Total Alumnos => 100%
+	Redees => x
+	Contabilidad => x
+	sistemas => x
+*/
+
+REAL alumnos_redes, alumnos_contabilidad, alumnos_sistemas
+REAL porcentaje_redes, porcentaje_contabilidad, porcentaje_sistemas, total_alumnos
+
+INICIO
+
+	ESCRIBA "Ingrese la cantidad de alumnos de redes: "
+	LEA alumnos_redes
+	
+	ESCRIBA "Ingrese la cantidad de alumnos de contabilidad: "
+	LEA alumnos_contabilidad
+	
+	ESCRIBA "Ingrese la cantidad de alumnos de sistemas: "
+	LEA alumnos_sistemas
+	
+	total_alumnos <- alumnos_redes + alumnos_contabilidad + alumnos_sistemas
+	porcentaje_redes <- alumnos_redes * 100 / total_alumnos
+	porcentaje_contabilidad <- alumnos_contabilidad * 100 / total_alumnos
+	porcentaje_sistemas <- alumnos_sistemas * 100 / total_alumnos
+	
+	ESCRIBA "El porcentaje de alumnos de redes es: ", porcentaje_redes
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "El porcentaje de alumnos de contabilidad es: ", porcentaje_contabilidad
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "El porcentaje de alumnos de sistemas es: ", porcentaje_sistemas
+
+FIN

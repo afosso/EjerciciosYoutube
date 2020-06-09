@@ -1,0 +1,24 @@
+/* 
+	1.	Elaborar un algoritmo que permita calcular el 
+	número de CDs necesarios para hacer una copia de seguridad, 
+	de la información almacenada en un disco cuya capacidad se conoce. 
+	Considerar que el disco duro está lleno de información, además 
+	expresado en gigabyte. Un CD Virgen tiene 700 Megabytes de capacidad 
+	y 1 gigabyte es igual a 1,024 megabytes.
+	
+	1GB => 1024 MB
+*/
+
+REAL capacidad_disco, numero_cds
+
+INICIO
+
+	ESCRIBA "Ingrese la capacidad del disco expresado en GB: "
+	LEA capacidad_disco
+	
+	numero_cds <- (capacidad_disco * 1024) / 700
+	
+	ESCRIBA "La cantidad de CDs necesarios son: ", numero_cds
+
+FIN
+
